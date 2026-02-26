@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(18px);
+  padding: 35px;
+  border-radius: 22px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+  color: white;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 13px;
+  opacity: 0.85;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 0 2px white;
+}
+
+/* Buttons */
+button {
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Primary */
+.primary {
+  background: white;
+  color: #5f27cd;
+}
+
+.primary:hover {
+  background: #f3f3f3;
+  transform: translateY(-2px);
+}
+
+/* Secondary */
+.secondary {
+  background: rgba(255,255,255,0.3);
+  color: white;
+}
+
+.secondary:hover {
+  background: rgba(255,255,255,0.5);
+}
+
+/* Logout */
+.logout {
+  background: #ff4d4d;
+  color: white;
+  padding: 8px 14px;
+}
+
+.logout:hover {
+  background: #e60000;
+}
+
+/* Button group */
+.btn-group {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Task input row */
+.task-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.task-input input {
+  flex: 1;
+  margin: 0;
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+/* Custom Scrollbar */
+.task-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.5);
+  border-radius: 10px;
+}
+
+/* Task item */
+.task-list li {
+  background: rgba(255,255,255,0.25);
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.task-list li:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+/* Message */
+.message {
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 500;
+}
